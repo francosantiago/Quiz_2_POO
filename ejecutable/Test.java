@@ -9,18 +9,29 @@ import vista.VentanaPrincipal;
 public class Test {
     public static void main(String[] args) 
     {
-        EmpresaAutomotriz miVentaCarros = new EmpresaAutomotriz();
+        EmpresaAutomotriz miEmpresa = new EmpresaAutomotriz();
+        
+        String[] nombres = ("Nestor Paez", "Jose Herrera", "Luis florez");
+
+        for(int i=0; i<nombres.length; i++)
+        {
+            miEmpresa.agregarEmpleado(new Empleado(nombres[i]), i);
+        }
+
+        System.out.println("Nomina empresa" + miEmpresa.calcularNomina());
+
+        Empleado amp1 = miEmpresa.getEmpleado(i:0);
+
+        emp1.miVentaCarro(new Carro(15000000));
+        emp1.miVentaCarro(new Carro(5000000));
+        
         VentanaPrincipal miVentana = new VentanaPrincipal();
+        EmpresaAutomotriz miVentaCarros;
         new Controlador(miVentana, miVentaCarros);
-        Empleado emp1 = new Empleado("Nestor");
-        Empleado emp2 = new Empleado("Jose");
-        Empleado emp3 = new Empleado("Luis");
 
-        miEmpresa.agregarEmpleado(emp1, 0);
-        miEmpresa.agregarEmpleado(emp2, 0);
-        miEmpresa.agregarEmpleado(emp3, 0);
+       
 
-        System.out.println("Nomina empresa" + miEmpresa.calcularNomina);
+    
 
     }
 }

@@ -4,7 +4,7 @@ import modelo.Carro;
 import modelo.Empleado;
 import modelo.EmpresaAutomotriz;
 import vista.PanelEntradaDatos;
-import vsta.PanelResultados;
+import vista.PanelResultados;
 import vista.VentanaPrincipal;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;

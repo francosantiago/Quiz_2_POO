@@ -20,10 +20,13 @@ public class EmpresaAutomotriz
         empleados = new Empleado[NUMERO_EMPLEADOS];
     }
 
-    public agregarEmpleado(Empleado emp, )
+    public void agregarEmpleado(Empleado emp, int pos )
+    {
+        empleados[pos] = emp;
+    }
     
     
-    private double calcularNomina()
+    public double calcularNomina()
     {   
         double totalNomina = 0;
         for(int i=0; i<empleados.length; i++)
@@ -31,5 +34,10 @@ public class EmpresaAutomotriz
             totalNomina = totalNomina +  empleados[i].getSueldo(); 
         }
         return totalNomina;
+    }
+
+    public Empleado getEmpleado(int i)
+    {
+        return empleados[i];
     }
 }

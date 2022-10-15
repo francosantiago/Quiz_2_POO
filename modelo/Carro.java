@@ -2,21 +2,43 @@ package modelo;
 
 public class Carro 
 {
-    //---------------------
-    //------Atributos------
-    //---------------------
-    private double precio;
+    private String nombre;
+    private int precio;
 
-    //---------------------
-    //------Metodos--------
-    //---------------------
-    public Carro(double pPrecio)
+    public Carro (String nombre, int precio)
     {
-        this.precio = pPrecio;
+        this.nombre = nombre;
+        this.precio = precio;
     }
 
-    public double getPrecio()
+    public Carro()
     {
-        return precio;
+        this.nombre = "";
+        this.precio = 0;
+    }
+    
+    public String getNombre()
+    {
+        return this.nombre;
+    }
+
+    public int getPrecio()
+    {
+        return this.precio;
+    }
+
+    public void setNombre(String nombre)
+    {
+        this.nombre = nombre;
+    }
+
+    public void setPrecio(int precio)
+    {
+        this.precio = precio;
+    }
+
+    public String toString()
+    {
+        return "\nDATOS DEL CARRO: \nNombre: " + nombre +"\nPrecio: " + precio;
     }
 }

@@ -5,21 +5,12 @@ import java.util.ArrayList;
 
 public class Empleado 
 {
-    //---------------------
-    //-----Constantes------
-    //---------------------
     public final static double SALARIO_MINIMO = 1000000;
 
-    //---------------------
-    //------Atributos------
-    //---------------------
     private String nombre;
     private ArrayList ventas;
     private double sueldo;
 
-    //---------------------
-    //------Metodos--------
-    //---------------------
     public Empleado(String pNombre)
     {
         this.nombre = pNombre;
