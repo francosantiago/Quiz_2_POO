@@ -20,6 +20,9 @@ public class EmpresaAutomotriz
         empleados = new Empleado[NUMERO_EMPLEADOS];
     }
 
+    public agregarEmpleado(Empleado emp, )
+    
+    
     private double calcularNomina()
     {   
         double totalNomina = 0;
